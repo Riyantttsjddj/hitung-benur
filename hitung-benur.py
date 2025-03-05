@@ -1,7 +1,7 @@
 import cv2
 
 # Buka kamera (0 untuk kamera utama)
-cap = cv2.VideoCapture(0)
+cap = cv2.VideoCapture("http://192.168.1.87:8080")
 
 while True:
     # Ambil frame dari kamera
