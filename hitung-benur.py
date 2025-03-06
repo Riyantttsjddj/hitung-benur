@@ -28,7 +28,7 @@ while True:
     cv2.putText(frame, f"Benur: {jumlah_benur}", (10, 50), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 2)
 
     # Tampilkan frame
-    cv2.imshow("Deteksi Benur", frame)
+    cv2.imwrite("hasil.jpg", frame)
 
     # Tekan 'q' untuk keluar
     if cv2.waitKey(1) & 0xFF == ord('q'):
